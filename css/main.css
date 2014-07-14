@@ -13,8 +13,8 @@ div {
 
 }
 
-div #main {
-        max-width: 60%;
+div#main {
+        width: 70%;
 
 }
 
