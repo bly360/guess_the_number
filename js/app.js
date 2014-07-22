@@ -20,9 +20,6 @@ $(document).ready(function() {
     console.log(randNum);
 
 
-    // BUG have space at top appear when display none is on
-    // BUG fix screen size for responsive, mobile only
-
     $("#restart").on("click", function() {
         guesses = [];
         randNum = Math.floor(Math.random(1)* 100);
@@ -56,7 +53,6 @@ $(document).ready(function() {
         if (guesses.length >= 5) {
             return;
         }
-
         // first if
         if (guesses.length >= 1) {
             debugger;
@@ -70,7 +66,7 @@ $(document).ready(function() {
             else {
                 guesses.push(guess);
                 $('#yourguess').text('your guesses: ' + guesses.join(', ')).show();
-                // is this right?
+
                 if (guess > randNum && guess <= randNum + 10) {
                     $('#hotcold').text("You're hot hot hot! Guess lower.").css('color', '#FAAA6A').show();
                 }

@@ -5,18 +5,24 @@
         <title>Guess the Number</title>
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Cherry+Swash|Raleway+Dots|Grand+Hotel' rel='stylesheet' type='text/css'>
-        <!-- <meta name="viewport" content="width=device-width, intial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id='main'>
             <div id="top">
             <h1>Guess the Number</h1>
             </div>
-            <input placeholder="guess a number between 1 and 100">
-            <button id="guess">This is it!</button>
-            <h3>5 Guesses Remaining</h3>
-            <button id="hint">Can I have a Hint Pleaseeee?</button>
-            <button id="restart">Start Over</button>
+            <h3 id="hotcold">you're getting</h3>
+            <h2 id="yourguess">1,3,5</h2>
+            <div id="movedown">
+                <input id="numInput" placeholder="guess a number between 1 and 100" >
+                <button id="guess">This is it!</button>
+                <h3 id="remaining"><span>5</span> Guesses Remaining</h3>
+                <button id="hint">Can I have a Hint Pleaseeee?</button>
+                <button id="restart">Start Over</button>
+            </div>
         </div>
+        <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
